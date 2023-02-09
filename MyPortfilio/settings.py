@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'MyPortfilio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'remote_host':'IP name: ip-172-31-43-234.ap-northeast-1.compute.internal',
         'NAME':  'myPortfilioComment',
         'USER':'root',
         'password':"",
