@@ -63,10 +63,10 @@ class ChatBOT(models.Model):
     img4=models.FileField( upload_to="news/",  max_length=250,null=True,default=None)
 
 class DataAnalysis(models.Model):
-    img1=models.FileField( upload_to="news/",  max_length=250, null=True,default=None)
-    img2=models.FileField( upload_to="news/",  max_length=250,null=True,default=None)
-    img3=models.FileField( upload_to="news/",  max_length=250,null=True,default=None)
-    img4=models.FileField( upload_to="news/",  max_length=250,null=True,default=None)
+    img1=models.FileField( upload_to="news1/",  max_length=250, null=True,default=None)
+    img2=models.FileField( upload_to="news1/",  max_length=250,null=True,default=None)
+    img3=models.FileField( upload_to="news1/",  max_length=250,null=True,default=None)
+    img4=models.FileField( upload_to="news1/",  max_length=250,null=True,default=None)
 
 class PersonalCV(models.Model):
-    cv= models.FileField(upload_to="news/",  max_length=250, null=True,default=None)
+    cv= models.FileField(upload_to="news1/",  max_length=250, null=True,default=None)
