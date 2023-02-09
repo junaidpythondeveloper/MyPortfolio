@@ -23,14 +23,12 @@ def home(request):
     web=Web.objects.all();
     chat = ChatBOT.objects.all();
     analysis =DataAnalysis.objects.all();
-    Cv1= PersonalCV.objects.all()
 
     data={
         'newsdata':newsdata,
         'web':web,
         'chat':chat,
         'analysis':analysis,
-        'Cv1':Cv1
     }
     return render(request, 'index.html',data)
 
