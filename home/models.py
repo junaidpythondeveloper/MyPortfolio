@@ -1,5 +1,5 @@
 from django.db import models
-
+from tinymce.models import HTMLField
 from django.contrib.auth.models import User
 from datetime import datetime,date
 
@@ -22,7 +22,7 @@ class Category(models.Model):
 class Lastnews(models.Model):
     title=models.CharField( max_length=50)
     authors = models.ForeignKey(User, on_delete=models.CASCADE)
-    news_desc=models.CharField( max_length=500)
+    news_desc=HTMLField()
     news_image= models.FileField( upload_to="news/",max_length=250, null=True,default=None)
     news_image1= models.FileField( upload_to="news/",max_length=250, null=True,default=None)
     news_image2= models.FileField( upload_to="news/",max_length=250, null=True,default=None)
