@@ -20,13 +20,13 @@ from home.models import PersonalCV
 
 def home(request):
     newsdata=Lastnews.objects.all();
-    web=Web.objects.all();
+    web1=Web.objects.all();
     chat = ChatBOT.objects.all();
     analysis =DataAnalysis.objects.all();
 
     data={
         'newsdata':newsdata,
-        'web':web,
+        'web1':web1,
         'chat':chat,
         'analysis':analysis,
     }
