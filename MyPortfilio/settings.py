@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&7sl@z7_exsgz9rpy&cbc%dh)uncetz$xx3wrsx(b+baf5=k&-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'MyPortfilio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'remote_host':'IP name: ip-172-31-43-234.ap-northeast-1.compute.internal',
+        
         'NAME':  'myPortfilioComment',
         'USER':'root',
         'password':"",
