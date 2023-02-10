@@ -76,16 +76,15 @@ WSGI_APPLICATION = 'MyPortfilio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        
-        'NAME':  'myPortfilioComment',
-        'USER':'root',
-        'password':"",
-        'HOST':'localhost',
-        'PORT':'3306'
-    }
+DATABASES={
+   'default':{
+      'ENGINE':'django.db.backends.postgresql_psycopg2',
+      'NAME':'postgres',
+      'USER':'postgres',
+      'PASSWORD':'junaid',
+      'HOST':'localhost',
+      'PORT':'5432',
+   }
 }
 
 
